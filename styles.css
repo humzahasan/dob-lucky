@@ -1,0 +1,67 @@
+body {
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(97, 186, 255, 1) 0%,
+    rgba(166, 239, 253, 1) 90.1%
+  );
+}
+
+.app-container {
+  height: 600px;
+  /* background-color: blue; */
+  position: absolute; /*Can also be `fixed`*/
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.app-head > h1,
+h3 {
+  color: rgba(16, 66, 157, 1);
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.app-body {
+  width: 30%;
+  margin: auto;
+}
+
+form {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+label {
+  font-family: fantasy;
+}
+
+input {
+  font-size: larger;
+  margin: 1rem;
+}
+
+#luckBtn {
+  padding: 5px;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+textarea#msg {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  resize: none;
+  font-size: larger;
+  /* padding: 10px; */
+  /*margin: 20px; */
+  border: 1px solid rgb(8, 45, 112);
+  width: 100%;
+  text-align: center;
+}
